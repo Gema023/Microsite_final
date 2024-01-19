@@ -154,7 +154,7 @@ body {
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 5px 5px grey;
-  background-color: #EF9B0F;
+  background-color: #584100;
   color: white;
 }
 .container .ver_todos {
@@ -253,6 +253,25 @@ footer img {
      object-fit: cover;
 }
 
+.grid_proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+}
+
+.container_imagenes_proyectos {
+  width: 100%;
+  overflow: hidden;
+}
+.container_imagenes_proyectos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main {
   width: 95%;
   margin: 0 auto;
@@ -265,5 +284,10 @@ main {
   .container3_proyectos p, .container3_proyectos div {
     width: 100%;
     padding: 20px 0px;
+  }
+  .grid_proyectos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0;
   }
 }/*# sourceMappingURL=style.css.map */

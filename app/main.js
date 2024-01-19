@@ -1,4 +1,4 @@
-fetch("data/anuario.json")
+fetch("data/anuario-1.json")
 .then((res) => res.json())
 .then((data) => {
     let cajaProyectos = document.querySelector(".caja");
@@ -6,7 +6,7 @@ fetch("data/anuario.json")
     data.forEach((proyecto) => {
         let cadaProyecto = document.createElement("article");
         cadaProyecto.classList.add("proyecto");
-        cadaProyecto.id = proyecto.Id;
+        cadaProyecto.id = proyecto.id;
 
         let imagenes = proyecto.imagenes ? proyecto.imagenes.split(",") : [];
         let primeraImagen = imagenes.length > 0 ? imagenes[0].trim() : "";
